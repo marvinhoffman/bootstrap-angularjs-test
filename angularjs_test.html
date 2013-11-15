@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <title>Testing AngularJS</title>
+    <link rel="stylesheet" href="foundation/css/foundation.min.css">
 </head>
 <body>
 <div ng-app="">
     <input type="text" ng-model="data.message">
-    <h1>{{ data.message }}</h1>
+    <p>{{data.message}}</p>
+    <div class="{{data.message}}">
+        wrap me with a foundation class
+    </div>
 </div>
-<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular/angular.js"></script>
 </body>
 </html>
